@@ -3,6 +3,6 @@ def oxford_comma(array)
     return array.join
   else
     last = array.pop
-    return array.join(", ") + (array.size == 2 ? "," : "") + " and #{last}"
+    return array.join(", ") + (array.size == 2 ? "" : ",") + " and #{last}"
   end
 end
